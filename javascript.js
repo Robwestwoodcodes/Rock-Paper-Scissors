@@ -1,9 +1,4 @@
 
-function playRound (playerSelection, getComputerChoice){
-
-
-}
-
 // function that gets the user input
 // converts user input to lower case
 function playerSelection () {
@@ -20,5 +15,14 @@ function getComputerChoice () {
     let computerChoice = ['rock','paper','scissors'];
     let chosenComputerChoice = computerChoice [Math.floor(Math.random() * computerChoice.length)];
     return computerStatement+chosenComputerChoice;
+}
+
+const userSelection = playerSelection();
+const computerSelection = getComputerChoice();
+
+function playRound (userSelection, computerSelection){
+
+
+
 }
 
