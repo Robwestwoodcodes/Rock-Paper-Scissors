@@ -1,14 +1,4 @@
 
-// function that gets the user input
-// converts user input to lower case
-function playerSelection () {
-    
-    let playerPrompt = prompt('Please enter either Rock, Paper or Scissors');
-    let playerCaseChange = playerPrompt.toLowerCase();
-    
-    return playerCaseChange;
-}
-
 // returns a random value out of 3 choices
 function getComputerChoice () {
     
@@ -17,36 +7,12 @@ function getComputerChoice () {
     return chosenComputerChoice;
 }
 
-const userSelection = playerSelection();
+//variables that allows the user to input a choice/ storing a function into a variable
+const playerSelection = prompt('Please enter either Rock, Paper or Scissors').toLowerCase;
 const computerSelection = getComputerChoice();
 
-function playRound (userSelection, computerSelection){
 
-    const playerStatement = ('Player has chosen ');
-    const computerStatement = ('Computer has chosen ');
-
-
-    if (userSelection === 'rock'){
-        rock();
-    } else if (userSelection === 'paper'){
-        paper();
-    } else (userSelection === 'scissors')
-        scissors();
-    
-    function rock (){
-        if (userSelection === computerSelection){
-        return 
-        
-    }
-
-    function paper(){
+//function to play a round of rock,paper or scissors
+function playRound (playerSelection, computerSelection){
 
     }
-
-    function scissors (){
-
-    }
-
-    } 
-
-
